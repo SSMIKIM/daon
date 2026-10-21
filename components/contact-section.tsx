@@ -198,7 +198,7 @@ export function ContactSection() {
         
           <Card className="p-0 bg-card border-border overflow-hidden h-[660px]">
             <iframe
-			  src=src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=%EB%8B%A4%EC%98%A8+%EC%8F%98%EC%9E%89+%EC%8B%9C%EC%8A%A4%ED%85%9C+%28daOn+Sewing+SYSTEM%29+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B4%91%EC%A7%84%EA%B5%AC+%EC%B2%9C%ED%98%B8%EB%8C%80%EB%A1%9C137%EA%B8%B8+9&zoom=16"
+			  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=%EB%8B%A4%EC%98%A8+%EC%8F%98%EC%9E%89+%EC%8B%9C%EC%8A%A4%ED%85%9C+%28daOn+Sewing+SYSTEM%29+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B4%91%EC%A7%84%EA%B5%AC+%EC%B2%9C%ED%98%B8%EB%8C%80%EB%A1%9C137%EA%B8%B8+9&zoom=16"
 			  width="100%"
 			  height="100%"
 			  style={{ border: 0 }}
