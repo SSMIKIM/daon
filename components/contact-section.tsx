@@ -4,6 +4,7 @@ import { Card } from "@/components/ui/card"
 import { MapPin, Phone, Mail, Copy, Check, Warehouse, Building2, Share2 } from "lucide-react"
 import { useState } from "react"
 import Image from "next/image"
+import { KakaoMap } from "@/components/kakao-map"
 
 const snsIcons = [
   {
@@ -63,13 +64,13 @@ export function ContactSection() {
             {/* 1. 찾아오시는 길 */}
             <Card
               className="lg:h-[100px] p-4 bg-card border-border cursor-pointer hover:bg-secondary/50 transition-colors group flex items-center"
-              onClick={() => copyToClipboard("서울특별시 중랑구 용마산로 381 2층", "address")}
+              onClick={() => copyToClipboard("서울특별시 광진구 천호대로137길 9, 1층", "address")}
             >
               <div className="flex items-center gap-4 w-full">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
                 <div className="flex-1">
                   <h3 className="font-bold text-base mb-0.5 text-foreground">{"찾아오시는 길"}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{"서울특별시 중랑구 용마산로 381 2층"}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{"서울특별시 광진구 천호대로137길 9, 1층"}</p>
                 </div>
                 {copiedItem === "address" ? (
                   <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
@@ -195,18 +196,9 @@ export function ContactSection() {
             </Card>
           </div>
 
-          {/* Google Map */}
+          {/* Kakao Map */}
           <Card className="p-0 bg-card border-border overflow-hidden h-[660px]">
-            <iframe
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%A4%91%EB%9E%91%EA%B5%AC+%EC%9A%A9%EB%A7%88%EC%82%B0%EB%A1%9C+381&zoom=16"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full h-full"
-            />
+            <KakaoMap address="서울 광진구 천호대로137길 9" placeName="daOn" level={3} />
           </Card>
         </div>
 
