@@ -4,7 +4,6 @@ import { Card } from "@/components/ui/card"
 import { MapPin, Phone, Mail, Copy, Check, Warehouse, Building2, Share2 } from "lucide-react"
 import { useState } from "react"
 import Image from "next/image"
-import { KakaoMap } from "@/components/kakao-map"
 
 const snsIcons = [
   {
@@ -198,7 +197,16 @@ export function ContactSection() {
 
           {/* Kakao Map */}
           <Card className="p-0 bg-card border-border overflow-hidden h-[660px]">
-            <KakaoMap address="서울 광진구 천호대로137길 9" placeName="daOn" level={3} />
+            <iframe
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B4%91%EC%A7%84%EA%B5%AC+%EC%B2%9C%ED%98%B8%EB%8C%80%EB%A1%9C137%EA%B8%B8+9&zoom=16"
+  width="100%"
+  height="100%"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  className="w-full h-full"
+/>
           </Card>
         </div>
 
